@@ -1,8 +1,7 @@
 let http = require('http');
-const { hrtime } = require('process');
-let server = http.createServer(server1Handler);
-function server1Handler(req, res){
-    console.log(req)
+ let server = http.createServer(serverHandler);
+function serverHandler(req, res){
+    res.end(req.headers)
 }
-server.listen(5000, () => console.log('server is running on port 5000'));
+server.listen(7000, () => console.log('server is running on port 7000'));
 
