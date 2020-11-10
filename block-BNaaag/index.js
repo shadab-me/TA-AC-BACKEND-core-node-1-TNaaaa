@@ -1,5 +1,4 @@
 let fs = require('fs');
-
 fs.readFile('./content.md', (err, content) => {
     if(err) console.log(err);
     console.log(content.toString());
